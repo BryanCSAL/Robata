@@ -4,7 +4,7 @@ import java.io.IOException; // Importa exceções de entrada/saída
 public class ChatGPTIntegration {
 
     // Constante contendo a chave de API para autenticação no ChatGPT
-    private static final String API_KEY = "CHAVE_DE_API";
+    private static final String API_KEY = "CHAVE_DE_API";    // COLOCAR CHAVE DA API DO GPT
     
     // URL da API do ChatGPT onde as requisições serão enviadas
     private static final String API_URL = "https://api.openai.com/v1/chat/completions";
