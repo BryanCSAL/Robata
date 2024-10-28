@@ -1,0 +1,6 @@
+Criar página na qual será utilizado o software.
+  •Criar uma página que represente um salão de beleza, deve possuir uma interface agradável e suave.
+  •É necessário a criação de um espaço para a inserção do chatbot.
+
+Corrigir erros no pom.xml.
+
