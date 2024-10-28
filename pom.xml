@@ -1,96 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Raiz do projeto Maven. Define o início do arquivo POM (Project Object Model) -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://www.w3.org/xsd/maven-4.0.0.xsd">
     
-    <!-- Versão do modelo POM -->
     <modelVersion>4.0.0</modelVersion>
-    
-    <!-- groupId: Define o grupo ou organização que desenvolve o projeto -->
-    <groupId>com.mycompany</groupId>
-    
-    <!-- artifactId: Nome do projeto ou artefato, neste caso "ROBATA" -->
-    <artifactId>ROBATA</artifactId>
-    
-    <!-- version: Versão do projeto. O sufixo "SNAPSHOT" indica que é uma versão de desenvolvimento -->
+
+    <groupId>com.robata</groupId>
+    <artifactId>RobataOrganizer</artifactId>
     <version>1.0-SNAPSHOT</version>
-    
-    <!-- packaging: O tipo de artefato gerado, neste caso será um arquivo JAR -->
-    <packaging>jar</packaging>
-    
-    <!-- Definição de propriedades importantes para a construção do projeto -->
+
     <properties>
-        <!-- Codificação dos arquivos-fonte do projeto -->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        
-        <!-- Define a versão do Java que será utilizada para compilar o projeto -->
-        <maven.compiler.source>19</maven.compiler.source>
-        <maven.compiler.target>19</maven.compiler.target>
-        
-        <!-- Classe principal que será executada no projeto -->
-        <exec.mainClass>com.mycompany.robata.ROBATA</exec.mainClass>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <!-- Bloco que contém todas as dependências que o projeto precisa -->
     <dependencies>
-
-        <!-- Dependência OkHttp: Biblioteca para fazer requisições HTTP (usada para acessar a API do ChatGPT) -->
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-            <version>4.9.1</version>
-        </dependency>
-
-        <!-- Jackson Databind: Biblioteca usada para manipulação de JSON (conversão entre JSON e objetos Java) -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.12.3</version>
-        </dependency>
-
-        <!-- Google OAuth 2.0: Usada para autenticação com o Google (necessária para acessar APIs como Google Calendar) -->
-        <dependency>
-            <groupId>com.google.auth</groupId>
-            <artifactId>google-auth-library-oauth2-http</artifactId>
-            <version>1.3.0</version>
-        </dependency>
-
-        <!-- Google API Client: Biblioteca cliente usada para fazer requisições às APIs do Google -->
+        <!-- Google API Client -->
         <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
-            <version>1.31.5</version>
+            <version>1.34.0</version>
         </dependency>
-
-        <!-- Google Calendar API: Biblioteca específica para interagir com a API do Google Calendar -->
-        <dependency>
-            <groupId>com.google.apis</groupId>
-            <artifactId>google-api-services-calendar</artifactId>
-            <version>v3-rev411-1.25.0</version>
-        </dependency>
-
-        <!-- Extensão OAuth Java 6: Suporte a OAuth em ambientes que utilizam Java 6 -->
-        <dependency>
-            <groupId>com.google.oauth-client</groupId>
-            <artifactId>google-oauth-client-java6</artifactId>
-            <version>1.31.5</version>
-        </dependency>
-
-        <!-- Extensão OAuth Jetty: Suporte ao uso da OAuth em conjunto com o servidor Jetty -->
+        <!-- Google OAuth Client -->
         <dependency>
             <groupId>com.google.oauth-client</groupId>
             <artifactId>google-oauth-client-jetty</artifactId>
-            <version>1.31.5</version>
+            <version>1.34.1</version>
         </dependency>
-
-        <!-- Cliente HTTP com Jackson: Usado para converter respostas JSON da API do Google em objetos Java -->
+        <!-- Google API Services Calendar -->
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-calendar</artifactId>
+            <version>v3-rev305-1.25.0</version>
+        </dependency>
+        <!-- Google HTTP Client com suporte para JSON e Jackson -->
         <dependency>
             <groupId>com.google.http-client</groupId>
             <artifactId>google-http-client-jackson2</artifactId>
-            <version>1.40.1</version>
+            <version>1.39.2</version>
         </dependency>
-
+        <!-- Biblioteca HTTP -->
+        <dependency>
+            <groupId>org.apache.httpcomponents.client5</groupId>
+            <artifactId>httpclient5</artifactId>
+            <version>5.1.3</version>
+        </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
