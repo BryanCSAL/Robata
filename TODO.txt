@@ -2,5 +2,6 @@ Criar página na qual será utilizado o software.
   •Criar uma página que represente um salão de beleza, deve possuir uma interface agradável e suave.
   •É necessário a criação de um espaço para a inserção do chatbot.
 
-Corrigir erros no pom.xml.
+Rever as configurações da API do Google calendar, testar cada etapa do codigo e comprovar o funcionamento.
 
+Conferir os caminhos indicados no código, conferir se as credenciais estão sendo encontradadas.
