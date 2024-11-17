@@ -174,3 +174,7 @@ class GeminiAPI {
         return new JSONObject(response.body()).getString("text");
     }
 }
+
+// 1- Rever as configurações da API do Google calendar, testar cada etapa do codigo e comprovar o funcionamento.
+
+// 2- Conferir os caminhos indicados no código, conferir se as credenciais estam sendo encontradadas.
