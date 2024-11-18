@@ -1,4 +1,4 @@
-# **[NOME DO PROJETO]**
+# **ROBATA**
 
 [![Licença MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
 [![Versão](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](https://semver.org/)  
@@ -7,7 +7,7 @@
 ---
 
 ## **Descrição**
-[Robata é um Organizador Inteligente de Agenda que visa ajudar os usuários a gerenciar a agenda de seus negócios de maneira mais eficiente, automatizando o processo de organização de compromissos e tarefas.]  
+Robata é um Organizador Inteligente de Agenda que visa ajudar os usuários a gerenciar a agenda de seus negócios de maneira mais eficiente, automatizando o processo de organização de compromissos e tarefas.
 
 ---
 
