@@ -25,6 +25,11 @@ Robata é um Organizador Inteligente de Agenda que visa ajudar os usuários a ge
 
 ---
 
+## **Licença**
+Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
 ## **Instalação e Uso**
 
 ### **Pré-requisitos**
