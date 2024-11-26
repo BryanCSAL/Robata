@@ -19,8 +19,8 @@ Robata é um Organizador Inteligente de Agenda que visa ajudar os usuários a ge
 ---
 
 ## **Tecnologias Utilizadas**
-- **Front-end**: [HTML e css]
-- - **Back-end**: [JAVA]
+- **Front-end**: [HTML5 e CSS]
+- **Back-end**: [JAVA]
 - **Banco de dados**: [MYSQL]
 - **Outras ferramentas**: [...]
 
@@ -35,5 +35,5 @@ Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo [LICENS
 
 ### **Pré-requisitos**
 Certifique-se de ter instalado:
-- [Dependência 1]  
-- [Dependência 2]
+- [credentials.json]  
+- [GEMINI API KEY]
