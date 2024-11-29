@@ -94,13 +94,18 @@ input::placeholder {
             border-bottom: 1px solid #e4d5c7;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
- header .logo {
+ header .logo a {
             font-size: 1.8em;
-            font-weight: bold;
-            color: #4b3832;
+            text-decoration: none; /* Remove o sublinhado do link */
+            color: #d7a79e; /* Cor rosada elegante */
+            font-weight: bold; /* Deixa o texto mais destacado */
+            cursor: pointer; /* Mantém o cursor de link */
+            transition: color 0.3s ease; /* Adiciona um efeito suave na mudança de cor */
         }
 
-
+header .logo a:hover {
+            color: #4b3832;
+        }
 </style>
 </head>
 <body>
