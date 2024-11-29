@@ -41,7 +41,7 @@
         header .logo {
             font-size: 1.8em;
             font-weight: bold;
-            color: #4b3832;
+            color: #d7a79e;
         }
 
         header .menu {
@@ -51,7 +51,7 @@
         }
 
         header .menu a {
-            color: #4b3832;
+            color: #d7a79e;
             text-decoration: none;
             font-size: 1em;
             font-weight: bold;
