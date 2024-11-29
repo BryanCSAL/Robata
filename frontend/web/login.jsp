@@ -105,9 +105,41 @@ input[type="submit"]:hover {
 .button-back:hover {
     background-color: #b6847d; /* Efeito de hover mais escuro */
 }
+
+ header {
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e4d5c7;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+ header .logo {
+            font-size: 1.8em;
+        }
+        
+ header .logo a {
+            text-decoration: none; /* Remove o sublinhado do link */
+            color: #d7a79e; /* Cor rosada elegante */
+            font-weight: bold; /* Deixa o texto mais destacado */
+            cursor: pointer; /* Mantém o cursor de link */
+            transition: color 0.3s ease; /* Adiciona um efeito suave na mudança de cor */
+        }
+
+        header .logo a:hover {
+            color: #4b3832;
+        }
 </style>
 </head>
 <body>
+<header>
+      <div class="logo"><a href="index.jsp">Robata</a></div>
+</header>
 <h1>Login</h1>
 <form action="LoginServlet" method="post">
     <label for="username">Usuário:</label>
