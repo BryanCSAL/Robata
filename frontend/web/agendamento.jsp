@@ -82,9 +82,42 @@
         .input-container button:hover {
             background-color: #b6847d; /* Cor de hover */
         }
+        header {
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e4d5c7;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header .perfil {
+            font-size: 1.8em;
+            display: flex;
+        }
+
+        header .perfil a {
+            text-decoration: none; /* Remove o sublinhado do link */
+            color: #d7a79e; /* Cor rosa*/
+            font-weight: bold; /* Deixa o texto mais destacado */
+            cursor: pointer; /* Mantém o cursor de link */
+            transition: color 0.3s ease; /* Adiciona um efeito suave na mudança de cor */
+        }
+
+        header .perfil a:hover {
+            color: #4b3832;
+        }
+
     </style>
 </head>
 <body>
+     <header>
+        <div class="perfil"><a href="perfil.jsp">Perfil</a></div>
+    </header>
     <div class="chat-container">
         <h1>Agendamento Robata</h1>
         <!-- Caixa de mensagens -->
