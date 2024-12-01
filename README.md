@@ -34,8 +34,27 @@ Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo [LICENS
 ## **Instalação e Uso**
 
 ### **Pré-requisitos**
-Certifique-se de ter instalado:
-- [credentials.json]  
-- [GEMINI API KEY]
-- [Banco de dados Criado]
-- [Driver Banco de dados]
+
+#### **Certifique-se de ter instalado:**
+- [Banco de dados (MYSQL)]  
+- [IDE (NETBEANS 22)]
+- [JDK 19]
+- [Glasfish 7.0]
+
+#### **Certifique-se de adquirir:**
+- [credentials.json] (É necessário a criar através do Google Cloud: https://console.cloud.google.com/apis/credentials)
+- [Gemini API KEY] (Apenas gere Google AI Studio: https://aistudio.google.com/app/apikey)
+- [Driver Banco de dados] (Apenas copie do Maven Repository: https://mvnrepository.com/artifact/mysql/mysql-connector-java)
+
+#### **Certifique-se de ter criado:**
+```sql
+CREATE TABLE usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(100) NOT NULL
+);
+
+INSERT INTO usuario (nome, email, senha)
+VALUES ('Teste', 'teste@gmail.com','1234');
+```
