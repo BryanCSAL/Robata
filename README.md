@@ -19,7 +19,7 @@ Robata é um Organizador Inteligente de Agenda que visa ajudar os usuários a ge
 ---
 
 ## **Tecnologias Utilizadas**
-- **Front-end**: [HTML5 e CSS]
+- **Front-end**: [HTML5, CSS e JS]
 - **Back-end**: [JAVA]
 - **Banco de dados**: [MYSQL]
 - **Outras ferramentas**: [...]
