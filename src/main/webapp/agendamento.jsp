@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,7 +18,7 @@
         }
 
         h1 {
-            color: #d7a79e; /* Título em tom rosado elegante */
+            color: #d7a79e; /* T�tulo em tom rosado elegante */
             font-size: 1.5em;
             margin-bottom: 20px;
         }
@@ -38,7 +37,7 @@
             width: 100%;
             max-width: 600px;
             height: 300px; /* Altura fixa */
-            overflow-y: auto; /* Rolagem se necessário */
+            overflow-y: auto; /* Rolagem se necess�rio */
             padding: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
         }
@@ -104,8 +103,8 @@
             text-decoration: none; /* Remove o sublinhado do link */
             color: #d7a79e; /* Cor rosa*/
             font-weight: bold; /* Deixa o texto mais destacado */
-            cursor: pointer; /* Mantém o cursor de link */
-            transition: color 0.3s ease; /* Adiciona um efeito suave na mudança de cor */
+            cursor: pointer; /* Mant�m o cursor de link */
+            transition: color 0.3s ease; /* Adiciona um efeito suave na mudan�a de cor */
         }
 
         header .perfil a:hover {
@@ -115,17 +114,14 @@
     </style>
 </head>
 <body>
-     <header>
+    <header>
         <div class="perfil"><a href="perfil.jsp">Perfil</a></div>
     </header>
     <div class="chat-container">
         <h1>Agendamento Robata</h1>
-        <!-- Caixa de mensagens -->
         <div class="chat-box" id="chat-box">
-            <!-- Exemplo de mensagens -->
-            <p><strong>Rob:</strong> Olá! Como posso ajudar você hoje?</p>
+            <p><strong>Rob:</strong> Ol�! Como posso ajudar voc� hoje?</p>
         </div>
-        <!-- Caixa de entrada -->
         <div class="input-container">
             <textarea id="user-input" placeholder="Digite sua mensagem aqui..."></textarea>
             <button onclick="sendMessage()">Enviar</button>
@@ -134,24 +130,48 @@
 
     <script>
         function sendMessage() {
-            // Obtém o valor digitado pelo usuário
             const userInput = document.getElementById("user-input").value;
             const chatBox = document.getElementById("chat-box");
 
-            // Verifica se a entrada não está vazia
             if (userInput.trim() !== "") {
-                // Adiciona a mensagem do usuário ao chat
                 const userMessage = document.createElement("div");
-                userMessage.innerHTML = '<p><strong>Você: </strong>' +  userInput + '</p>';
+                userMessage.innerHTML = '<p><strong>Voc�: </strong>' +  userInput + '</p>';
                 chatBox.appendChild(userMessage);
 
+                sendToServlet(userInput);
 
-                // Limpa o campo de entrada
                 document.getElementById("user-input").value = "";
-
-                // Faz o scroll automático para a última mensagem
                 chatBox.scrollTop = chatBox.scrollHeight;
             }
+        }
+
+        function sendToServlet(userInput) {
+            fetch("AgendamentoServlet", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: "userPrompt=" + encodeURIComponent(userInput)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Erro no servidor: " + response.status);
+                    }
+                    return response.text();
+                })
+                .then(result => {
+                    const chatBox = document.getElementById("chat-box");
+                    const botMessage = document.createElement("div");
+                    botMessage.innerHTML = `<p><strong>Rob:</strong>`  + result + `</p>`;
+                    chatBox.appendChild(botMessage);
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                })
+                .catch(error => {
+                    console.error("Erro ao enviar ao servlet:", error);
+                    const chatBox = document.getElementById("chat-box");
+                    const botMessage = document.createElement("div");
+                    botMessage.innerHTML = `<p><strong>Rob:</strong> Desculpe, ocorreu um erro. Tente novamente mais tarde. ` + error + `</p>`;
+                    chatBox.appendChild(botMessage);
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                });
         }
     </script>
 </body>

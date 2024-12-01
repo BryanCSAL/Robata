@@ -44,7 +44,7 @@ label {
     color: #6d5a56; /* Cor suave para os rótulos */
 }
 
-input[type="text"], 
+input[type="email"], 
 input[type="password"] {
     padding: 10px;
     border: 1px solid #e4d5c7;
@@ -141,9 +141,9 @@ input[type="submit"]:hover {
       <div class="logo"><a href="index.jsp">Robata</a></div>
 </header>
 <h1>Login</h1>
-<form action="LoginServlet" method="post">
-    <label for="username">Usuário:</label>
-    <input type="text" id="username" name="username" required>
+<form action="${pageContext.request.contextPath}/LoginServlet" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
     
     <label for="password">Senha:</label>
     <input type="password" id="password" name="password" required>
