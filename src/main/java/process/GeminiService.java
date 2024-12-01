@@ -34,7 +34,7 @@ public class GeminiService {
                 + "]"
                 + "}";
 
-        var httpClient = HttpClient.newHttpClient();
+        var httpClient = SelfCertificatedServer.getHttpClient();
         var apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent";
 
         var request = HttpRequest.newBuilder()
