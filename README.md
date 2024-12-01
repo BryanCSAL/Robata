@@ -1,7 +1,7 @@
 # **ROBATA**
 
 [![Licença MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
-[![Versão](https://img.shields.io/badge/version-0.0.4-brightgreen.svg)](https://semver.org/)  
+[![Versão](https://img.shields.io/badge/version-0.1.2-brightgreen.svg)](https://semver.org/)  
 [![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
 
 ---
@@ -37,3 +37,5 @@ Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo [LICENS
 Certifique-se de ter instalado:
 - [credentials.json]  
 - [GEMINI API KEY]
+- [Banco de dados Criado]
+- [Driver Banco de dados]
