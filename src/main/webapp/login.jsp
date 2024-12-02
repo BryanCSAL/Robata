@@ -74,21 +74,6 @@ input[type="submit"]:hover {
     background-color: #b6847d; /* Efeito de hover mais escuro */
 }
 
-.forgot-password {
-    margin-top: 10px;
-    font-size: 14px;
-    text-align: center; /* Centralizar o texto */
-}
-
-.forgot-password a {
-    color: #b6847d;
-    text-decoration: none;
-}
-
-.forgot-password a:hover {
-    text-decoration: underline;
-}
-
 .button-back {
     background-color: #d7a79e; /* Botão com cor vibrante */
     color: white;
@@ -140,6 +125,7 @@ input[type="submit"]:hover {
 <header>
       <div class="logo"><a href="index.jsp">Robata</a></div>
 </header>
+   
 <h1>Login</h1>
 <form action="${pageContext.request.contextPath}/LoginServlet" method="post">
     <label for="email">Email:</label>
@@ -150,7 +136,19 @@ input[type="submit"]:hover {
     
     <input type="submit" value="Entrar">
 </form>
+    
+<% 
+    String status = request.getParameter("status");
+    String message = request.getParameter("message");
+    if ("success".equals(status)) {
+%>
+    <p style="color: #d7a79e;"><%= message %></p>
+<% 
+    }
+%>
+    
 <!-- Botão para voltar para a página de cadastro -->
-<a href="index.jsp" class="button-back">Voltar para Cadastro</a>
+<a href="cadastro.jsp" class="button-back">Voltar para Cadastro</a>
 </body>
 </html>
+
