@@ -125,6 +125,7 @@ input[type="submit"]:hover {
 <header>
       <div class="logo"><a href="index.jsp">Robata</a></div>
 </header>
+   
 <h1>Login</h1>
 <form action="${pageContext.request.contextPath}/LoginServlet" method="post">
     <label for="email">Email:</label>
@@ -135,8 +136,19 @@ input[type="submit"]:hover {
     
     <input type="submit" value="Entrar">
 </form>
+    
+<% 
+    String status = request.getParameter("status");
+    String message = request.getParameter("message");
+    if ("success".equals(status)) {
+%>
+    <p style="color: #d7a79e;"><%= message %></p>
+<% 
+    }
+%>
+    
 <!-- Botão para voltar para a página de cadastro -->
-<a href="index.jsp" class="button-back">Voltar para Cadastro</a>
-<%@ include file="WEB-INF/jspf/footer.jspf" %>
+<a href="cadastro.jsp" class="button-back">Voltar para Cadastro</a>
 </body>
 </html>
+
