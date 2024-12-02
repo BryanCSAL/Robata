@@ -89,13 +89,13 @@
             <a href="cadastro.jsp">Cadastro</a>
         </div>
     </header>
-    <main>
+       <main>
         <div class="text-box">
             <!-- Espaço para inserir o texto -->
-            <h1>Bem-vindo à nossa plataforma!</h1>
-            <p>Aqui você pode explorar várias funcionalidades incríveis. Faça login ou cadastre-se para começar.</p>
+            <h1>Bem-vindo à plataforma Robata!</h1>
+            <p>Sua agenda mais pratica com chatbot,para expandir a capacidade de organização de empresas, trazendo um software capaz de agendar tarefas e eventos remotamente e sem a interferência de humanos.
+Faça login ou cadastre-se para começar.</p>
         </div>
     </main>
-<%@ include file="WEB-INF/jspf/footer.jspf" %>
 </body>
 </html>
