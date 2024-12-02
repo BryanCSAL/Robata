@@ -16,6 +16,20 @@
     </properties>
 
     <dependencies>
+          <!-- Jakarta Mail -->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>jakarta.mail</artifactId>
+            <version>2.0.1</version> <!-- Verifique a versão atual -->
+        </dependency>
+        
+        <!-- Security Crypto-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+            <version>5.8.3</version>
+        </dependency>
+             
         <!-- Jakarta EE API -->
         <dependency>
             <groupId>jakarta.platform</groupId>
