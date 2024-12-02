@@ -136,5 +136,6 @@ header .logo a:hover {
 <form action="login.jsp" method="get">
     <input type="submit" value="Já possui uma conta? Faça login">
 </form>
+<%@ include file="WEB-INF/jspf/footer.jspf" %>
 </body>
 </html>
