@@ -51,11 +51,10 @@ CREATE TABLE usuario (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
-    senha VARCHAR(100) NOT NULL
-);
+    senha VARCHAR(100) NOT NULL,
+    token VARCHAR(255),
+    email_confirmado BOOLEAN DEFAULT FALSE);
 
-INSERT INTO usuario (nome, email, senha)
-VALUES ('Teste', 'teste@gmail.com','1234');
 ```
 
 #### **Certifique-se de ter criar o ambiente de programação:**
