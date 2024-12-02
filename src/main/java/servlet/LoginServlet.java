@@ -74,7 +74,7 @@ public class LoginServlet extends HttpServlet {
                     session.setAttribute("usuarioLogado", rs.getString("nome"));
                     session.setAttribute("idUsuario", rs.getString("id"));
                     session.setAttribute("usuarioEmail", email);
-
+                    
                     response.sendRedirect("agendamento.jsp");
                 } else {
                     response.sendRedirect("login.jsp?error=invalid");
@@ -95,6 +95,7 @@ public class LoginServlet extends HttpServlet {
                 e.printStackTrace();
             }
         }
+        
     }
 
     @Override
