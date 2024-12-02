@@ -22,7 +22,6 @@ Robata é um Organizador Inteligente de Agenda que visa ajudar os usuários a ge
 - **Front-end**: ***[HTML5, CSS e JS]***
 - **Back-end**: ***[JAVA]***
 - **Banco de dados**: ***[MYSQL]***
-- **Outras ferramentas**: ***[...]***
 
 ---
 
@@ -63,6 +62,6 @@ VALUES ('Teste', 'teste@gmail.com','1234');
 - ***[API KEY]:*** Acessar as variáveis de ambiente, criar nova variável de sistema: Nome da variável(GEMINI_API_KEY) Valor("Sua api key")
 
 
-### **Pré-requisitos**
+### **Uso:**
 
 ...
