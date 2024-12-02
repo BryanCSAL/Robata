@@ -1,10 +1,11 @@
-process\ConfigLoader.class
 com\mycompany\projetofinalpupo\resources\JakartaEE10Resource.class
 process\CalendarService.class
 com\mycompany\projetofinalpupo\JakartaRestConfiguration.class
 servlet\AgendamentoServlet.class
 servlet\LoginServlet.class
 servlet\CadastroServlet.class
+servlet\CadastroServlet$1.class
+servlet\ConfirmacaoServlet.class
 process\EventDetails.class
 process\GeminiService.class
 process\SelfCertificatedServer.class
