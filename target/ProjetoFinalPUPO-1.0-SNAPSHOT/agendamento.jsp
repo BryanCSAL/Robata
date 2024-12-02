@@ -120,7 +120,7 @@
     <div class="chat-container">
         <h1>Agendamento Robata</h1>
         <div class="chat-box" id="chat-box">
-            <p><strong>Rob:</strong> Olá! Como posso ajudar você hoje?</p>
+            <p><strong>Rob:</strong> Olá! Gostaria de marcar uma consulta? Me diga qual horário você gostaria de marcar, dia e qual seria o serviço?</p>
         </div>
         <div class="input-container">
             <textarea id="user-input" placeholder="Digite sua mensagem aqui..."></textarea>
