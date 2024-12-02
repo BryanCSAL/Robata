@@ -96,5 +96,6 @@
             <p>Aqui você pode explorar várias funcionalidades incríveis. Faça login ou cadastre-se para começar.</p>
         </div>
     </main>
+<%@ include file="WEB-INF/jspf/footer.jspf" %>
 </body>
 </html>
