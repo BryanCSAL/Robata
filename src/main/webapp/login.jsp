@@ -74,21 +74,6 @@ input[type="submit"]:hover {
     background-color: #b6847d; /* Efeito de hover mais escuro */
 }
 
-.forgot-password {
-    margin-top: 10px;
-    font-size: 14px;
-    text-align: center; /* Centralizar o texto */
-}
-
-.forgot-password a {
-    color: #b6847d;
-    text-decoration: none;
-}
-
-.forgot-password a:hover {
-    text-decoration: underline;
-}
-
 .button-back {
     background-color: #d7a79e; /* Botão com cor vibrante */
     color: white;
@@ -152,5 +137,6 @@ input[type="submit"]:hover {
 </form>
 <!-- Botão para voltar para a página de cadastro -->
 <a href="index.jsp" class="button-back">Voltar para Cadastro</a>
+<%@ include file="WEB-INF/jspf/footer.jspf" %>
 </body>
 </html>
