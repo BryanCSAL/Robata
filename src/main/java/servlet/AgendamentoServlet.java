@@ -47,7 +47,8 @@ public class AgendamentoServlet extends HttpServlet {
                     "Inclua uma data no formato 'dd de [mês por extenso]' (por exemplo, '25 de novembro'). " +
                     "Inclua um horário no formato 'hhh' (por exemplo, '14h'). A estrutura deve ser clara e os campos apresentados como linhas separadas." +
                     "Lembrando que hoje é " + dataAtual + " " + diaDaSemana;
-
+            
+            // Enviar prompt ao Gemini
             String geminiResponse = geminiService.getCompletion(prompt);
             LOGGER.info("Resposta do Gemini: " + geminiResponse);
 
@@ -55,11 +56,14 @@ public class AgendamentoServlet extends HttpServlet {
                 throw new Exception("A resposta do Gemini está vazia ou inválida.");
             }
 
+            // Extrair os detalhes do evento da resposta do Gemini
             EventDetails eventDetails = calendarService.parseGeminiResponse(geminiResponse);
 
+            // Inicializar o Google Calendar
             final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
             Calendar service = CalendarService.getCalendarService(HTTP_TRANSPORT);
 
+            // Criar evento no Google Calendar
             calendarService.createEvent(service, eventDetails);
             LOGGER.info("Evento criado com sucesso.");
 
