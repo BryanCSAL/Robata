@@ -32,7 +32,7 @@ Robata é um Organizador Inteligente de Agenda que visa ajudar os usuários a ge
 - **Front-end**: ***[HTML5 e CSS]***
 - **Back-end**: ***[JAVA e JS]***
 - **Banco de dados**: ***[MYSQL]***
-- **APIs**: ***[Gemini API e Google Calendar API]***
+- **APIs**: ***[Gemini API, Google Calendar API e Jakarta Mail API]***
 
 ---
 
