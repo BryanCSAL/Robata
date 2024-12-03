@@ -18,7 +18,7 @@
         }
 
         h1 {
-            color: #d7a79e; /* TÃ­tulo em tom rosado elegante */
+            color: #d7a79e; /* Título em tom rosado elegante */
             font-size: 1.5em;
             margin-bottom: 20px;
         }
@@ -37,7 +37,7 @@
             width: 100%;
             max-width: 600px;
             height: 300px; /* Altura fixa */
-            overflow-y: auto; /* Rolagem se necessÃ¡rio */
+            overflow-y: auto; /* Rolagem se necessário */
             padding: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
         }
@@ -103,8 +103,8 @@
             text-decoration: none; /* Remove o sublinhado do link */
             color: #d7a79e; /* Cor rosa*/
             font-weight: bold; /* Deixa o texto mais destacado */
-            cursor: pointer; /* MantÃ©m o cursor de link */
-            transition: color 0.3s ease; /* Adiciona um efeito suave na mudanÃ§a de cor */
+            cursor: pointer; /* Mantém o cursor de link */
+            transition: color 0.3s ease; /* Adiciona um efeito suave na mudança de cor */
         }
 
         header .perfil a:hover {
@@ -120,7 +120,7 @@
     <div class="chat-container">
         <h1>Agendamento Robata</h1>
         <div class="chat-box" id="chat-box">
-            <p><strong>Rob:</strong> OlÃ¡! Gostaria de marcar uma consulta? Me diga qual horÃ¡rio vocÃª gostaria de marcar, dia e qual seria o serviÃ§o?</p>
+            <p><strong>Rob:</strong> Olá! Como posso ajudar você hoje?</p>
         </div>
         <div class="input-container">
             <textarea id="user-input" placeholder="Digite sua mensagem aqui..."></textarea>
@@ -135,7 +135,7 @@
 
             if (userInput.trim() !== "") {
                 const userMessage = document.createElement("div");
-                userMessage.innerHTML = '<p><strong>VocÃª: </strong>' +  userInput + '</p>';
+                userMessage.innerHTML = '<p><strong>Você: </strong>' +  userInput + '</p>';
                 chatBox.appendChild(userMessage);
 
                 sendToServlet(userInput);
@@ -173,7 +173,6 @@
                     chatBox.scrollTop = chatBox.scrollHeight;
                 });
         }
-<%@ include file="WEB-INF/jspf/footer.jspf" %>
     </script>
 </body>
 </html>

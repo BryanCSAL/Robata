@@ -43,7 +43,7 @@ public class CadastroServlet extends HttpServlet {
             }
         });
 
-       String link = "http://localhost:8080/xdxd/ConfirmacaoServlet?token=" + token;
+       String link = "http://localhost:8080/Robata/ConfirmacaoServlet?token=" + token;
 
 
         Message message = new MimeMessage(session);
