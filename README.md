@@ -74,7 +74,7 @@ CREATE TABLE usuario (
 1. **Descompactação do Projeto**: Feito o download do projeto, descompacte o arquivo em formato ZIP.
 2. **Abrir o Projeto no NetBeans**: Utilize o **NetBeans** para abrir e executar o projeto.
 3. **Configuração do Banco de Dados**: Crie a databese e a tabela conforme indicado nos Pré-requisitos.
-4. **Configuração do Ambiente**: Alterar **credentials.json**, insira a sua adquirida como dito anteriormente nos Pré-requisitos, após cessar as **variáveis de ambiente**, criar nova variável de sistema: **Nome da variável(GEMINI_API_KEY) Valor("Sua api key")**.
+4. **Configuração do Ambiente**: Alterar **credentials.json**, insira a sua adquirida como dito anteriormente nos Pré-requisitos, após cessar as **variáveis de ambiente**, criar nova variável de sistema: **Nome da variável(GEMINI_API_KEY) Valor("Sua api key")** e por fim rodar a classe CalendarQuickstart e confirmar as permissões do Robata.
 5. **Execução do Projeto**: Dê o build no projeto e já poderá executa-lo.
 
 ---
