@@ -12,6 +12,7 @@
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
 * [Licença](#licença)
 * [Como Executar o Projeto](#instalação-e-uso)
+* [Autores do Projeto](#autores)
 
 ---
 
@@ -75,3 +76,11 @@ CREATE TABLE usuario (
 3. **Configuração do Banco de Dados**: Crie a databese e a tabela conforme indicado nos Pré-requisitos.
 4. **Configuração do Ambiente**: Alterar **credentials.json**, insira a sua adquirida como dito anteriormente nos Pré-requisitos, após cessar as **variáveis de ambiente**, criar nova variável de sistema: **Nome da variável(GEMINI_API_KEY) Valor("Sua api key")**.
 5. **Execução do Projeto**: Dê o build no projeto e já poderá executa-lo.
+
+---
+  
+## **Autores**
+
+* [Antônio Hiroky](https://github.com/AntonioUrata)
+* [Bryan Lopes](https://github.com/BryanCSAL)
+* [Yuri Galhego](https://github.com/Galhego)
