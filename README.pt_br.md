@@ -22,7 +22,7 @@ Robata é um Organizador Inteligente de Agenda que visa ajudar os usuários a ge
 ---
 
 ## **Funcionalidades**
-- ✅ ***[Funcionalidade 1: Fazer agendamentos no google calendar através de chatbot]***
+- ✅ ***[Funcionalidade 1: Fazer agendamentos no google calendar através do chatbot]***
 - 🚀 ***[Funcionalidade futura: Remover agendamentos através do chatbot]***
 - 🚀 ***[Funcionalidade futura: Verificar horários disponíveis através do chatbot]***
 
@@ -53,7 +53,7 @@ Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo ***[LIC
 
 #### **Certifique-se de adquirir:**
 - ***[credentials.json]:*** É necessário a criar através do Google Cloud: https://console.cloud.google.com/apis/credentials
-- ***[Gemini API KEY]:*** Apenas gere Google AI Studio: https://aistudio.google.com/app/apikey
+- ***[Gemini API KEY]:*** É necessário a criar através do Google AI Studio: https://aistudio.google.com/app/apikey
 
 #### **Certifique-se de ter criado:**
 ```sql
