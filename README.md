@@ -4,58 +4,60 @@
 [![Versão](https://img.shields.io/badge/version-0.1.2-brightgreen.svg)](https://semver.org/)  
 [![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
 
+[Leia em Portugês](README.pt_br.md)
+
 ---
 
 ## Índice
-* [Descrição do Projeto](#descrição)
-* [Funcionalidades](#funcionalidades)
-* [Tecnologias Utilizadas](#tecnologias-utilizadas)
-* [Licença](#licença)
-* [Como Executar o Projeto](#instalação-e-uso)
-* [Autores do Projeto](#autores)
+* [Description](#description)
+* [Functions](#functions)
+* [Technologies Used](#technologies-used)
+* [License](#license)
+* [How to install/use](#install-and-use)
+* [Authors](#authors)
 
 ---
 
-## **Descrição**
-Robata é um Organizador Inteligente de Agenda que visa ajudar os usuários a gerenciar a agenda de seus negócios de maneira mais eficiente, automatizando o processo de organização de compromissos e tarefas.
+## **Description**
+Robata is a smart agenda organizer designed to help users manage their business more efficiently by automating appointment scheduling.
 
 ---
 
-## **Funcionalidades**
-- ✅ ***[Funcionalidade 1: Fazer agendamentos no google calendar através de chatbot]***
-- 🚀 ***[Funcionalidade futura: Remover agendamentos através do chatbot]***
-- 🚀 ***[Funcionalidade futura: Verificar horários disponíveis através do chatbot]***
+## **Functions**
+- ✅ ***[First Funciontion: Schedule appointments in Google Calendar through th chatbot]***
+- 🚀 ***[Future Function: Remove appointments through the chatbot]***
+- 🚀 ***[Future Function: Check available times through the chatbot]***
 
 ---
 
-## **Tecnologias Utilizadas**
+## **Technologies Used**
 - **Front-end**: ***[HTML5 e CSS]***
 - **Back-end**: ***[JAVA e JS]***
-- **Banco de dados**: ***[MYSQL]***
-- **APIs**: ***[Gemini API, Google Calendar API e Jakarta Mail API]***
+- **Database**: ***[MYSQL]***
+- **APIs**: ***[Gemini API, Google Calendar API and Jakarta Mail API]***
 
 ---
 
-## **Licença**
-Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo ***[LICENSE](LICENSE)*** para mais detalhes.
+## **License**
+This project is licensed under the MIT License. See the ***[LICENSE](LICENSE)*** file for more details.
 
 ---
 
-## **Instalação e Uso**
+## **Install and Use**
 
-### **Pré-requisitos**
+### **Prerequisites**
 
-#### **Certifique-se de ter instalado:**
-- ***[Banco de dados (MYSQL)]***  
+#### **Make sure you have installed:**
+- ***[Database (MYSQL)]***  
 - ***[IDE (NETBEANS 22)]***
 - ***[JDK 19]***
 - ***[Glasfish 7.0]***
 
-#### **Certifique-se de adquirir:**
-- ***[credentials.json]:*** É necessário a criar através do Google Cloud: https://console.cloud.google.com/apis/credentials
-- ***[Gemini API KEY]:*** Apenas gere Google AI Studio: https://aistudio.google.com/app/apikey
+#### **Make sure to acquire:**
+- ***[credentials.json]:*** Is necessary to acquire through Google Cloud: https://console.cloud.google.com/apis/credentials
+- ***[Gemini API KEY]:*** Is necessary to acquire through Google AI Studio: https://aistudio.google.com/app/apikey
 
-#### **Certifique-se de ter criado:**
+#### **Make sure to create:**
 ```sql
 CREATE DATABASE ROBATA;
 
@@ -69,17 +71,17 @@ CREATE TABLE usuario (
 
 ```
 
-#### **Uso:**
+#### **Use:**
 
-1. **Descompactação do Projeto**: Feito o download do projeto, descompacte o arquivo em formato ZIP.
-2. **Abrir o Projeto no NetBeans**: Utilize o **NetBeans** para abrir e executar o projeto.
-3. **Configuração do Banco de Dados**: Crie a databese e a tabela conforme indicado nos Pré-requisitos.
-4. **Configuração do Ambiente**: Alterar **credentials.json**, insira a sua adquirida como dito anteriormente nos Pré-requisitos, após cessar as **variáveis de ambiente**, criar nova variável de sistema: **Nome da variável(GEMINI_API_KEY) Valor("Sua api key")** e por fim rodar a classe CalendarQuickstart e confirmar as permissões do Robata.
-5. **Execução do Projeto**: Dê o build no projeto e já poderá executa-lo.
+1. **Project Extraction**: After downloading the project, extract the ZIP file.  
+2. **Open the Project in NetBeans**: Use **NetBeans** to open and run the project.  
+3. **Database Configuration**: Create the database and table as specified in the prerequisites.  
+4. **Environment Configuration**: Update **credentials.json**, inserting the one you obtained as mentioned in the prerequisites. Afterward, access the **environment variables**, create a new system variable: **Variable Name (GEMINI_API_KEY), Value ("Your API key")**, and finally, run the `CalendarQuickstart` class to confirm Robata permissions.  
+5. **Project Execution**: Build the project, and it will be ready to run.  
 
 ---
   
-## **Autores**
+## **Authors**
 
 * [Antônio Hiroky](https://github.com/AntonioUrata)
 * [Bryan Lopes](https://github.com/BryanCSAL)
