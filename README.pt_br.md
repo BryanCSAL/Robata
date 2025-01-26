@@ -4,6 +4,7 @@
 [![Versão](https://img.shields.io/badge/version-0.1.2-brightgreen.svg)](https://semver.org/)  
 [![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
 
+[![Read in English](https://img.shields.io/badge/read%20in-english-red.svg)](README.md)
 ---
 
 ## Índice
