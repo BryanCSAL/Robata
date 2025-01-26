@@ -1,11 +1,10 @@
 # **ROBATA**
 
-[![Licença MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
-[![Versão](https://img.shields.io/badge/version-0.1.2-brightgreen.svg)](https://semver.org/)  
-[![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
+[![Versiom](https://img.shields.io/badge/version-0.1.2-brightgreen.svg)](https://semver.org/)  
+[![Project Status](https://img.shields.io/badge/status-in%20development-yellow.svg)]()
 
-[Leia em Portugês](README.pt_br.md)
-
+[![Leia em Português](https://img.shields.io/badge/leia%20em-português-red.svg)](README.pt_br.md)
 ---
 
 ## Índice
@@ -78,6 +77,11 @@ CREATE TABLE usuario (
 3. **Database Configuration**: Create the database and table as specified in the prerequisites.  
 4. **Environment Configuration**: Update **credentials.json**, inserting the one you obtained as mentioned in the prerequisites. Afterward, access the **environment variables**, create a new system variable: **Variable Name (GEMINI_API_KEY), Value ("Your API key")**, and finally, run the `CalendarQuickstart` class to confirm Robata permissions.  
 5. **Project Execution**: Build the project, and it will be ready to run.  
+
+---
+#### **Note:**
+
+We are working to resolve a recent issue with the API requests. Sometimes, the chatbot returns a 505 error.
 
 ---
   
