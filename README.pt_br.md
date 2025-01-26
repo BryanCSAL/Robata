@@ -78,6 +78,12 @@ CREATE TABLE usuario (
 5. **Execução do Projeto**: Dê o build no projeto e já poderá executa-lo.
 
 ---
+
+#### **Nota:**
+
+Atualmente estamos trabalhando em um recente erro de requisição de API que surgiu. O chatbot pode retonar o erro 505.
+
+---
   
 ## **Autores**
 
